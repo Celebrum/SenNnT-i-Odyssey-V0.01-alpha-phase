@@ -1,2 +1,1 @@
-# SenNnT-i-Odyssey-V0.01-alpha-phase
-A repository for SenNnT-i's Odyssey interactive learning platform
+This repository is empty. Any task executed on it should be considered a new capability and needs to be created.
