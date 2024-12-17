@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './AICompanion.css';
+import { PostgresHandler, TimeScaleDBHandler, AirtableHandler } from './handlers';
 
 const AICompanion = () => {
   const [userGoals, setUserGoals] = useState([]);
@@ -79,4 +80,61 @@ const AICompanion = () => {
   );
 };
 
+class PostgresHandler {
+  constructor(connectionData) {
+    this.connectionData = connectionData;
+    this.connection = null;
+  }
+
+  async connect() {
+    // Implement connection logic for PostgreSQL
+  }
+
+  async disconnect() {
+    // Implement disconnection logic for PostgreSQL
+  }
+
+  async query(sql) {
+    // Implement query execution logic for PostgreSQL
+  }
+}
+
+class TimeScaleDBHandler extends PostgresHandler {
+  constructor(connectionData) {
+    super(connectionData);
+  }
+
+  async connect() {
+    // Implement connection logic for TimescaleDB
+  }
+
+  async disconnect() {
+    // Implement disconnection logic for TimescaleDB
+  }
+
+  async query(sql) {
+    // Implement query execution logic for TimescaleDB
+  }
+}
+
+class AirtableHandler {
+  constructor(connectionData) {
+    this.connectionData = connectionData;
+    this.connection = null;
+  }
+
+  async connect() {
+    // Implement connection logic for Airtable
+  }
+
+  async disconnect() {
+    // Implement disconnection logic for Airtable
+  }
+
+  async query(sql) {
+    // Implement query execution logic for Airtable
+  }
+}
+
+export { PostgresHandler, TimeScaleDBHandler, AirtableHandler };
 export default AICompanion;
