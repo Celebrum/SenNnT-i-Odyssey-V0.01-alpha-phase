@@ -20,6 +20,24 @@ services:
     ports:
       - "5432:5432"
 
+  timescaledb:
+    image: timescale/timescaledb:latest
+    environment:
+      POSTGRES_USER: tsdbadmin
+      POSTGRES_PASSWORD: xl6r7yfwpny89268
+      POSTGRES_DB: tsdb
+    ports:
+      - "5433:5432"
+
+  airtable:
+    image: airtable/airtable:latest
+    environment:
+      AIRTABLE_API_KEY: your_airtable_api_key
+      AIRTABLE_BASE_ID: your_airtable_base_id
+      AIRTABLE_TABLE_NAME: your_airtable_table_name
+    ports:
+      - "5434:80"
+
   load-balancer:
     image: nginx:latest
     ports:

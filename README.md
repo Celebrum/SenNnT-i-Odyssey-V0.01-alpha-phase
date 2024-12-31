@@ -63,3 +63,15 @@ We welcome contributions to the SenNnT-i platform! To contribute, please follow 
 ## Code of Conduct
 
 We are committed to fostering an inclusive and respectful community. Please read and adhere to our [Code of Conduct](CODE_OF_CONDUCT.md) when participating in this project.
+
+## Secrets Configuration
+
+To configure the `.env` file, you need to fetch the following secrets from the respective services:
+
+* `TIMESCALE_SERVICE_URL`: Fetch the service URL from the TimescaleDB service. [TimescaleDB API Token](https://docs.timescale.com/)
+* `PGPASSWORD`: Fetch the password for the PostgreSQL database. [PostgreSQL API Token](https://www.postgresql.org/)
+* `PGUSER`: Fetch the username for the PostgreSQL database. [PostgreSQL API Token](https://www.postgresql.org/)
+* `PGDATABASE`: Fetch the database name for the PostgreSQL database. [PostgreSQL API Token](https://www.postgresql.org/)
+* `PGHOST`: Fetch the host for the PostgreSQL database. [PostgreSQL API Token](https://www.postgresql.org/)
+* `PGPORT`: Fetch the port for the PostgreSQL database. [PostgreSQL API Token](https://www.postgresql.org/)
+* `PGSSLMODE`: Fetch the SSL mode for the PostgreSQL database. [PostgreSQL API Token](https://www.postgresql.org/)
